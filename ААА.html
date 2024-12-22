@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ресторан "Champagne Life"</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-image: url('ресторан.jpg'); /* Background image */
+            background-size: cover; /* Ensure the image covers the entire background */
+            background-position: center; /* Center the image */
+            color: #333;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #555;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #ff9900;
+        }
+        .hero {
+            background: url('https://source.unsplash.com/1600x800/?restaurant') no-repeat center center/cover;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-shadow: 2px 2px 5px black;
+        }
+        .hero h1 {
+            font-size: 3rem;
+        }
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+        .menu {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .menu-item {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            width: 300px;
+            padding: 15px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .menu-item img {
+            width: 100%;
+            border-radius: 5px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+        iframe {
+            width: 100%;
+            max-width: 600px;
+            height: 450px;
+            border: 0;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ресторан "Champagne Life"</h1>
+    </header>
+    <nav>
+        <a href="#about">О нас</a>
+        <a href="#menu">Меню</a>
+        <a href="#contact">Контакты</a>
+    </nav>
+    <div class="hero">
+        <h1>Добро пожаловать!</h1>
+    </div>
+    <section id="about">
+        <h2>О нас</h2>
+        <p>Наш ресторан предлагает вам уютную атмосферу и изысканные блюда от лучших шеф-поваров.</p>
+    </section>
+    <section id="menu">
+        <h2>Меню</h2>
+        <div class="menu">
+            <div class="menu-item">
+                <img src="паста.jpg" alt="Паста">
+                <h3>Паста</h3>
+                <p>Нежная паста с соусом на ваш выбор. 500₽</p>
+            </div>
+            <div class="menu-item">
+                <img src="стейк.jpg" alt="Стейк">
+                <h3>Стейк</h3>
+                <p>Сочный стейк, приготовленный по вашему вкусу. 800₽</p>
+            </div>
+            <div class="menu-item">
+                <img src="ДЕСЕРТ.jpg" alt="Десерт">
+                <h3>Десерт</h3>
+                <p>Сладкие угощения для завершения трапезы. 300₽</p>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Контакты</h2>
+        <p>Адрес: ул. Шопокова 15</p>
+        <p>Телефон: +996 551 159 153</p>
+        <p>Инстаграм: <a href="https://instagram.com/a_k_m_o7" target="_blank">@a_k_m_o7</a></p>
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2924.708389196169!2d74.58061471568898!3d42.87462061058873!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x389ec8cd8f4b29af%3A0xc74837a8de5f2768!2z0YPQuy4g0KHQtdC80LXRgNGB0LrQuNC5INC_0L7RgNGD0LTQvtC20YHQutC40LkgMTUsINCc0L7RgdC60LLQsNC90LAsINCc0L7RgdC60LLQsNC90LDRgNC-0LI!5e0!3m2!1sru!2skg!4v1692899875493!5m2!1sru!2skg" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </section>
+    <footer>
+        <p>&copy; 2024 Ресторан "Champagne Life". Все права защищены.</p>
+    </footer>
+</body>
+</html>
